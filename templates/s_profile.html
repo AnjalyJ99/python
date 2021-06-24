@@ -1,0 +1,80 @@
+{% extends 's_layout.html' %}
+{% block body %}
+
+
+<div  class="profile_table" >
+            
+  <table style="background-color: #fff ;"  cellpadding="0" cellspacing="0" width="100%" >
+      <tbody >
+          <tr>
+              <th colspan="2" width="50%" >Student Details</th>
+          </tr>
+          <tr>
+              <td align="left">Admission No:
+              </td>
+              <td align="left" >
+                  <span >{{ account['admno'] }}</span>
+              </td>
+              
+          </tr>
+          <tr>
+              <td align="left">Student Name:
+              </td>
+              <td align="left" >
+                  <span >{{ account['fullname'] }}</span>
+              </td>
+          </tr>
+          <tr>
+              <td align="left">Gender:
+              </td>
+              <td align="left" >
+                  <span >{{ account['gender'] }}</span>
+              </td>
+          </tr>
+          <tr>
+              <td align="left">Date of Birth:
+              </td>
+              <td align="left" >
+                  <span >{{ account['dob'] }}</span>
+              </td>
+          </tr>
+          <tr>
+              <td align="left">Course:
+              </td>
+              <td align="left" >
+                  <span >{{ account['course'] }}</span>
+              </td>
+          </tr>
+          <tr>
+              <td align="left">Phone No:
+              </td>
+              <td align="left" >
+                  <span >{{ account['phoneno'] }}</span>
+              </td>
+              
+          </tr>
+          <tr>
+              <td align="left">Address:
+              </td>
+              <td align="left" >
+                  <span >{{ account['address'] }}</span>
+              </td>
+              
+          </tr>
+          
+          <tr>
+              <td align="left">Email ID:
+              </td>
+              <td align="left">
+                  <span >{{ account['email'] }}</select></span>
+
+              </td>
+              
+          </tr>
+          
+      </tbody>
+  </table>
+
+</div> 
+
+{% endblock %}

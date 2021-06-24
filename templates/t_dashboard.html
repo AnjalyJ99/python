@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Homepage</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/style1.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+
+        <!--wrapper start-->
+        <div class="wrapper">
+            <!--header menu start-->
+            <div class="header">
+                <div class="header-menu">
+                    <div class="title">SJCET</div>
+                    <div class="sidebar-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul>
+                        <li><a href="/Faculty/Home.html"><i class="fas fa-power-off"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--header menu end-->
+            <!--sidebar start-->
+            <div class="sidebar">
+                <div class="sidebar-menu">
+                    <center class="profile">
+                        <img src="/Faculty/asset/user1.jpg" alt="">
+                        <p>USER</p>
+                    </center>
+                    <li class="item">
+                        <a href="#" class="menu-btn">
+                            <i class="fas fa-desktop"></i><span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="/Faculty/studentprofile.html" class="menu-btn">
+                            <i class="fas fa-user"></i><span>Student Profile</span>
+                        </a>
+                    </li>
+                    <li class="item" id="profile">
+                        <a href="/Faculty/attendance.html" class="menu-btn">
+                            <i class="fas fa-check"></i><span>Attendance <i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu" id="myDropdown">
+                            <a href="#"><span>Enter Attendance</span></a>
+                            <a href="#"></i><span>Edit Attendance</span></a>
+							<a href="/Faculty/viewattendance.html"></i><span>View Attendance</span></a>
+							
+                        </div>
+                    </li>
+                    <li class="item" id="messages">
+                        <a href="/Faculty/marks.html" class="menu-btn">
+                            <i class="far fa-edit"></i><span>Marks <i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu">
+                            <a href="#"><span>Enter Marks</span></a>
+                            
+                            <a href="/Faculty/internaltest1.html"><span>Internal Test1</span></a>                          
+                            <a href="/Faculty/internaltest2.html"><span>Internal Test 2</span></a>
+                            <a href="/Faculty/model.html"><span>Model</span></a>
+                            <a href="/Faculty/assignment1.html"><span>Assignment 1</span></a> 
+                            <a href="/Faculty/assignment2.html"><span>Assignment 2</span></a>
+                            <a href="/Faculty/semexam.html"><span>Sem Exam Marks</span></a>   
+                            <a href="/Faculty/totalmarks.html"><span>Total Marks of Students</span></a>
+                        </div>
+                    </li>
+                    <li class="item" id="settings">
+                        <a href="/Faculty/timetable.html" class="menu-btn">
+                            <i class="far fa-calendar-alt"></i><span>Timetable </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="/Faculty/report.html" class="menu-btn">
+                            <i class="fas fa-folder"></i><span>Report</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <!--sidebar end-->
+           
+            <div class="content" align="center">
+      
+                <div class="container">
+              
+                  <div class="row">
+              
+                    <div class="card">
+                      <div class="card-header">
+                          <img src="/Faculty/asset/attendance.jpg" alt="profile"  srcset="">
+                      </div>
+                      <h3 align="center">Attendance</h3>
+                      <div class="card-body">
+                        
+                        <p>
+                          Enter the attendance of the students based on the class they are in.There is also the
+                          provision to edit the attendance of a whole class of student individually.
+                        </p>
+                        
+                        
+                        <a href="/Faculty/enterattendance.html" class="btn">Enter Attendance</a>
+                      </div>
+                    </div>
+              
+                    <div class="card">
+                      <div class="card-header">
+                        <img src="/Faculty/asset/marks.jpg" alt="" srcset="">
+                      </div>
+                      <h3 align="center">Marks</h3>
+                      <div class="card-body">
+                        <p>
+                          Enter the marks of the students based on the class they are in.
+                          This includes Internals,Model Exams,Assignments.
+                          The marks of the students can also be edited.
+                        </p>
+                        <br>
+                        <a href="/Faculty/entermark.html" class="btn">Enter Marks</a>
+                      </div>
+                    </div>
+                    
+                    <div class="card">
+                      <div class="card-header">
+                          <img src="/Faculty/asset/timetable.png" alt="" srcset="">
+                      </div>
+                      <h3 align="center">TimeTable</h3>
+                      <div class="card-body">
+                        <p>
+                            View the timetable for each day. The timetable displays all the courses of the student and 
+                            the time and day in which they are conducted.
+                        </p>
+                        <br><br><br>          
+                        <a href="/Faculty/timetable.html" class="btn">View TimeTable</a>
+                      </div>
+                    </div>
+                    
+                    <div class="card">
+                      <div class="card-header">
+                          <img src="/Faculty/asset/report.jpg" width="170" alt="" srcset="">
+                      </div>
+                      <br><br><br>
+                      <h3 align="center">Report</h3>
+                      
+                      <div class="card-body">
+                        <p>
+                          Generate reports for each student.These reports include generating a table
+                           consisting of the students belonging to that class and their respective Attendance and Totalmarks.
+                        </p>
+                        <a href="/Faculty/report.html" class="btn">Generate Reports</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>       
+          
+              </div>
+         
+
+        <script type="text/javascript">
+
+        $(document).ready(function(){
+            $(".sidebar-btn").click(function(){
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+		
+   
+        </script>
+
+    </body>
+</html>

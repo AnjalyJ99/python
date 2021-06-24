@@ -1,0 +1,10 @@
+{%  extends 'layouts.html' %}
+{% block content %}
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+{% endblock %}
+{% block footer %}
+{{super()}}
+Additionl footer
+{% endblock %}

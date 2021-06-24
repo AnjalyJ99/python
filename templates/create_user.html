@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+<title>Mini Form</title>
+</head>
+<body>
+{% if message %}
+<p>{{message}}</p>
+{% endif %}
+<div id="parent">
+
+
+<form action-"{{ url_for('create_user')}}" method="POST" id="form_login">
+<h2>Login</h2>
+<label for="fname">username:</label><br>
+<input type="text" id="username" name="username"><br>
+<label for="lname" >password:</label><br>
+<input type="password" id="password" name="password"><br><br>
+<input type="submit" value="Submit">
+</form>
+<div>
+</body>
+</html>

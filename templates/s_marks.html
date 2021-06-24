@@ -1,0 +1,71 @@
+{% extends 's_layout.html' %}
+{% block body %}
+        
+            <div class="mark_table_content" align="center" >
+                <table class="mark_table"  >
+                    <h1 align="center">Marks</h1>
+                        
+                    <tr>
+                        <th style="width: 13%;">Course No</th>
+                        <th class="from">Course Name</th>
+                        <th style="width: 11%;">Internels 1</th>
+                        <th style="width: 11%;">Internels 2</th>
+                        <th style="width: 11%;">Internels 3</th>
+                        <th style="width: 10%;">Assignment 1</th>
+                        <th style="width: 10%;">Assignment 2</th>
+                        <th style="width: 8%;">SEE</th>
+                    </tr>
+                    <tr>
+                        <td>RLMCA202</td>
+                        <td>Application Development and Maintenance </td>
+                        <td>{{ marks['adminternal1'] }}</td>
+                        <td>{{ marks['adminternal2'] }}</td>
+                        <td>{{ marks['adminternal3'] }}</td>
+                        <td>{{ marks['admassignment1'] }}</td>
+                        <td>{{ marks['admassignment2'] }}</td>
+                        <td>{{ marks['admsee'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>RLMCA204</td>
+                        <td>Big Data Technologies</td>
+                        <td>{{ marks['bdinternal1'] }}</td>
+                        <td>{{ marks['bdinternal2'] }}</td>
+                        <td>{{ marks['bdinternal3'] }}</td>
+                        <td>{{ marks['bdassignment1'] }}</td>
+                        <td>{{ marks['bdassignment2'] }}</td>
+                        <td>{{ marks['bdsee'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>RLMCA206</td>
+                        <td>Mobile Computing</td>
+                        <td>{{ marks['mcinternal1'] }}</td>
+                        <td>{{ marks['mcinternal2'] }}</td>
+                        <td>{{ marks['mcinternal3'] }}</td>
+                        <td>{{ marks['mcassignment1'] }}</td>
+                        <td>{{ marks['mcassignment2'] }}</td>
+                        <td>{{ marks['mcsee'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>RLMCA208</td>
+                        <td>Introduction to Machine Learning</td>
+                        <td>{{ marks['mlinternal1'] }}</td>
+                        <td>{{ marks['mlinternal2'] }}</td>
+                        <td>{{ marks['mlinternal3'] }}</td>
+                        <td>{{ marks['mlassignment1'] }}</td>
+                        <td>{{ marks['mlassignment2'] }}</td>
+                        <td>{{ marks['mlsee'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>RLMCA274</td>
+                        <td>Business Intelligence and its Applications</td>
+                        <td>{{ marks['biainternal1'] }}</td>
+                        <td>{{ marks['biainternal2'] }}</td>
+                        <td>{{ marks['biainternal3'] }}</td>
+                        <td>{{ marks['biaassignment1'] }}</td>
+                        <td>{{ marks['biaassignment2'] }}</td>
+                        <td>{{ marks['biasee'] }}</td>
+                    </tr>
+                </table>
+            </div>
+
+ {% endblock %}

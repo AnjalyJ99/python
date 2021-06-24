@@ -1,0 +1,481 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  background: #fff;
+}
+
+.wrapper .header{
+  z-index: 1;
+  background: #2f323a;
+  position: fixed;
+  width: calc(100% - 0%);
+  height: 70px;
+  display: flex;
+  top: 0;
+}
+
+.wrapper .header .header-menu{
+  width: calc(100% - 0%);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.wrapper .header .header-menu .title{
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.wrapper .header .header-menu .title span{
+  color: #4CCEE8;
+}
+
+.wrapper .header .header-menu .sidebar-btn{
+  color: #fff;
+  position: absolute;
+  margin-left: 240px;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: color;
+}
+
+.wrapper .header .header-menu .sidebar-btn:hover{
+  color: #4CCEE8;
+}
+
+.wrapper .header .header-menu ul{
+  display: flex;
+}
+
+.wrapper .header .header-menu ul li a{
+  background: #fff;
+  color: #000;
+  display: block;
+  margin: 0 10px;
+  font-size: 18px;
+  width: 34px;
+  height: 34px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  transition-property: background, color;
+}
+
+.wrapper .header .header-menu ul li a:hover{
+  background: #4CCEE8;
+  color: #fff;
+}
+
+.wrapper .sidebar{
+  z-index: 1;
+  background:#22242A;
+  position: fixed;
+  top: 70px;
+  width: 250px;
+  height: calc(100% - 9%);
+  transition: 0.3s;
+  transition-property: width;
+  overflow-y: auto;
+
+}
+
+.wrapper .sidebar .sidebar-menu{
+  overflow: hidden;
+}
+
+.wrapper .sidebar .sidebar-menu .profile img{
+  margin: 20px 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.wrapper .sidebar .sidebar-menu .profile p{
+  color: #bbb;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.wrapper .sidebar .sidebar-menu .item{
+  width: 250px;
+  overflow: hidden;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn{
+  display: block;
+  color: #fff;
+  position: relative;
+  padding: 25px 20px;
+  transition: 0.3s;
+  transition-property: color;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn:hover{
+  color: #4CCEE8;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn i{
+  margin-right: 20px;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn .drop-down{
+  float: right;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu{
+  background: #3498DB;
+  overflow: auto;
+  max-height: 0;
+  transition: 0.3s;
+  transition-property: background, max-height;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu a{
+  display: block;
+  position: relative;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 15px;
+  padding: 20px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu a:hover{
+  background: #55B1F0;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu a:not(last-child){
+  border-bottom: 1px solid #8FC5E9;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu i{
+  padding-right: 20px;
+  font-size: 10px;
+}
+
+.wrapper .sidebar .sidebar-menu .item:target .sub-menu{
+  max-height: 500px;
+}
+
+.wrapper .main-container{
+  width: (100% - 250px);
+  margin-top: 70px;
+  margin-left: 100px;
+  padding: 15px;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.wrapper.collapse .sidebar{
+  width: 70px;
+}
+
+.wrapper.collapse .sidebar .profile img,
+.wrapper.collapse .sidebar .profile p,
+.wrapper.collapse .sidebar a span{
+  display: none;
+}
+
+.wrapper.collapse .sidebar .sidebar-menu .item .menu-btn{
+  font-size: 23px;
+}
+
+.wrapper.collapse .sidebar .sidebar-menu .item .sub-menu i{
+  font-size: 18px;
+  padding-left: 3px;
+}
+
+.wrapper.collapse .main-container{
+  width: calc(100% - 70px);
+  margin-left: 70px;
+}
+
+.wrapper .main-container .card{
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.about{   
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    background: url(/Faculty/asset/background.png) no-repeat;
+    background-position: center;
+    
+    transition: 0.5s;
+    background-size:contain;
+ }
+/* timetable page */
+.timetable_table, th, tr, td{
+  border: 1px solid black;
+  width:90%;
+  
+}
+.timetable_table{
+margin-left: auto;
+  margin-right: auto;
+}
+tr:hover {background-color:#714ab9;}
+/* totalmarks */
+.font{
+  font-size: 20px;
+
+}
+.totalmarks{
+  width: 100%;
+ 
+}
+.thclass{
+  height: 40px;
+  width:150px;
+ 
+}
+/* edit marks */
+.editmarks{
+  font-size:20px;
+  width:100%;
+}
+.thedit{
+  height: 50px;
+  width:280px;
+}
+/* enter marks */
+.emark 
+  {
+     color: black; 
+     background: yellow;
+     cursor: pointer;
+	  border:none;
+	  padding: 10px 17px;
+    font-size: 20px;
+}
+		
+.emark:hover
+  {
+	 background:black;
+	 color:white;
+}
+/*attendance*/
+.table {
+	position:absolute;
+	align:center;
+	bottom:100px;
+	right:200px;
+	margin-left:auto;
+	margin-right:auto;
+  border-collapse: separate;
+  text-align:center;
+  width:60%;
+  height:60%;
+  border-spacing: 0;
+  color: #1a1a6e;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.th{
+  padding: 10px 15px;
+  vertical-align: middle;
+  background-color:blue;
+}
+.td {
+  padding: 10px 15px;
+  vertical-align: middle;
+}
+.thead {
+  background: #032b49;
+  background: linear-gradient(#154469, #255c86);
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.th:first-child {
+  border-top-left-radius: 5px;
+  text-align: left;
+}
+.th:last-child {
+  border-top-right-radius: 5px;
+}
+.tbody tr:nth-child(even) {
+  background: #e784ce;
+}
+.tbody tr:nth-child(odd) {
+  background: linen;
+}
+.td {
+  border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
+}
+.td:first-child {
+  border-left: 1px solid #cecfd5;
+}
+.book-title {
+  color: #395870;
+  display: block;
+}
+.text-offset {
+  color: #7c7c80;
+  font-size: 12px;
+}
+.item-stock,
+.item-qty {
+  text-align: center;
+}
+.item-price {
+  text-align: right;
+}
+.item-multiple {
+  display: block;
+}
+.button1 {
+	background-color: #4CAF50;
+	} 
+tfoot {
+    text-align: right;
+  }
+tfoot .tr:last-child {
+    background: #f0f0f2;
+    color: #395870;
+    font-weight: bold;
+  }
+tfoot .tr:last-child .td:first-child {
+    border-bottom-left-radius: 1px;
+  }
+tfoot .tr:last-child .td:last-child {
+    border-bottom-right-radius: 1px;
+  }
+  /* dashboard */
+  .container {
+    width: 65%;
+    margin: 80px auto;
+    margin-left: 300px;
+    
+  }
+  .heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    width: 22%;
+    background: #fff;
+    border: 2px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.5s;
+    border-radius: 12px;
+  }
+  
+  .card-header {
+    text-align: center;
+    padding: 20px 10px;
+    
+  }
+  
+  .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+    bottom: 5px;
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+  .content{
+    background: url(/Faculty/asset/background.png) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 600%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+    background-size:contain;
+    
+  }
+  /*student profile */
+  #student {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 110%;
+  }
+  
+  #student td, #student th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #student tr:nth-child(even){background-color:pink;}
+  #student tr:nth-child(odd){background-color:linen;}
+  
+  #student tr:hover {background-color:skyblue;}
+  
+  #student th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  #student td{
+    color:blue;
+  }
